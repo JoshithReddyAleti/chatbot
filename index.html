@@ -1,0 +1,42 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personalized Financial Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Your Personalized Financial Dashboard</h1>
+    </header>
+    <div class="dashboard">
+      <h2>Your Spending Overview</h2>
+      <div class="chart-container">
+        <div class="chart" id="pieChart">Pie Chart Placeholder</div>
+        <div class="chart" id="barChart">Bar Chart Placeholder</div>
+      </div>
+
+      <h2>Your Savings Goals</h2>
+      <div class="goal-tracker">
+        <p><strong>Vacation Fund:</strong> 60% Complete</p>
+        <div class="goal-progress" style="width: 60%"></div>
+        <p><strong>Emergency Savings:</strong> 40% Complete</p>
+        <div class="goal-progress" style="width: 40%"></div>
+      </div>
+    </div>
+
+    <div id="chatbot">
+      <div id="chat-header">Virtual Assistant</div>
+      <div id="chat-body">
+        <p><strong>Bot:</strong> Hi there! How can I help you today?</p>
+      </div>
+      <input type="text" id="chat-input" placeholder="Type your message..." />
+    </div>
+
+    <button onclick="toggleChatbot()" class="chat-button">Chat with Us</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
