@@ -28,15 +28,15 @@ This project was built using the following technologies and frameworks:
 **Problem:** Ensuring that **transactions, bill payments, and income updates** were properly stored and retrieved dynamically.  
 **Solution:** We implemented **local storage** to **persist financial data** across sessions and built an intuitive **dashboard that updates dynamically** whenever a user makes a transaction.  
 
-### **3️⃣ Intelligent Chatbot for Finance Queries**  
+### **2️⃣ Intelligent Chatbot for Finance Queries**  
 **Problem:** Making the **chatbot understand multiple financial queries** and deliver **structured responses** was a challenge.  
 **Solution:** We **enhanced natural language processing (NLP) logic** to recognize **financial terms** like "spending summary," "loan eligibility," and "investment recommendations," ensuring that the chatbot responds **intelligently to user queries**.  
 
-### **4️⃣ Secure & Efficient Payment System**  
+### **3️⃣ Secure & Efficient Payment System**  
 **Problem:** Creating a **functional and secure payment processing interface** while allowing **multiple banking actions (Pay, Transfer, Deposit, Invest)**.  
 **Solution:** We **designed separate pages for transactions, transfers, and investments**, ensuring users have a clear step-by-step process for **securing financial transactions**.  
 
-### **5️⃣ Data Visualization & UX Optimization**  
+### **4️⃣ Data Visualization & UX Optimization**  
 **Problem:** Representing financial trends **effectively** while maintaining a **clean, user-friendly UI**.  
 **Solution:** We used **Chart.js** to provide **clear visual representations of spending habits, income vs. expenses, and investment trends**, making financial data more **digestible** for users.  
 
