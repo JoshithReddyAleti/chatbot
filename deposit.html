@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deposit Check</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="deposit-container">
+      <h2>🏦 Deposit Check</h2>
+
+      <label>Check From:</label>
+      <input type="text" placeholder="Issuer Name" required />
+
+      <label>Check Number:</label>
+      <input type="text" placeholder="Check Number" required />
+
+      <label>Amount:</label>
+      <input type="number" placeholder="Enter Amount ($)" required />
+
+      <label>Date Issued:</label>
+      <input type="date" required />
+
+      <label>Upload Check Image:</label>
+      <input type="file" accept="image/*" required />
+
+      <button onclick="processCheckDeposit()">Submit Check</button>
+      <button onclick="window.location.href='index.html'">Cancel</button>
+    </div>
+
+    <script>
+      function processCheckDeposit() {
+        alert("Check Deposited Successfully!");
+        window.location.href = "index.html";
+      }
+    </script>
+  </body>
+</html>

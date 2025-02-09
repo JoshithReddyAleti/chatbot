@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Investment Opportunities</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="investment-container">
+      <h2>📈 Top Stocks to Invest In</h2>
+      <ul>
+        <li><strong>💰 NVIDIA (NVDA)</strong> - $605.50</li>
+        <li><strong>📊 S&P 500 (SPY)</strong> - $495.12</li>
+        <li><strong>🚗 Tesla (TSLA)</strong> - $195.75</li>
+        <li><strong>🖥️ Microsoft (MSFT)</strong> - $342.80</li>
+        <li><strong>🍏 Apple (AAPL)</strong> - $178.20</li>
+      </ul>
+
+      <label>Select Stock:</label>
+      <select id="stock-selection">
+        <option value="NVIDIA">NVIDIA</option>
+        <option value="S&P500">S&P 500</option>
+        <option value="Tesla">Tesla</option>
+        <option value="Microsoft">Microsoft</option>
+        <option value="Apple">Apple</option>
+      </select>
+
+      <label>Investment Amount:</label>
+      <input type="number" placeholder="Amount in $" required />
+
+      <button onclick="investStock()">Invest Now</button>
+      <button onclick="window.location.href='index.html'">Cancel</button>
+    </div>
+
+    <script>
+      function investStock() {
+        let stock = document.getElementById("stock-selection").value;
+        alert(`Investment in ${stock} successful!`);
+        window.location.href = "index.html";
+      }
+    </script>
+  </body>
+</html>

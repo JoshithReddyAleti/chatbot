@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Make a Payment</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="payment-container">
+      <h2>💳 Make a Payment</h2>
+      <label>Transaction From:</label>
+      <input type="text" placeholder="Your Account Number" required />
+
+      <label>Transaction To:</label>
+      <input type="text" placeholder="Recipient Account Number" required />
+
+      <label>Transaction Amount:</label>
+      <input type="number" placeholder="Amount in $" required />
+
+      <label>Transaction For:</label>
+      <input
+        type="text"
+        placeholder="Purpose (e.g., Rent, Shopping, Loan)"
+        required
+      />
+
+      <label>Recipient Name:</label>
+      <input type="text" placeholder="Enter Full Name" required />
+
+      <button onclick="processPayment()">Submit Payment</button>
+      <button onclick="window.location.href='index.html'">Cancel</button>
+    </div>
+
+    <script>
+      function processPayment() {
+        alert("Payment Successful!");
+        window.location.href = "index.html";
+      }
+    </script>
+  </body>
+</html>

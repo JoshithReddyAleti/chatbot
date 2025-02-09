@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wire Transfer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="transfer-container">
+      <h2>🔄 Wire Transfer</h2>
+
+      <label>From Account:</label>
+      <input type="text" placeholder="Your Account Number" required />
+
+      <label>To Account:</label>
+      <input type="text" placeholder="Recipient Account Number" required />
+
+      <label>Recipient Full Name:</label>
+      <input type="text" placeholder="Full Name" required />
+
+      <label>Bank Name:</label>
+      <input type="text" placeholder="Recipient's Bank Name" required />
+
+      <label>Routing Number:</label>
+      <input type="text" placeholder="Routing Number" required />
+
+      <label>Transfer Amount:</label>
+      <input type="number" placeholder="Enter Amount ($)" required />
+
+      <label>Purpose of Transfer:</label>
+      <input
+        type="text"
+        placeholder="E.g., Rent, Family Support, Business"
+        required
+      />
+
+      <button onclick="processTransfer()">Submit Transfer</button>
+      <button onclick="window.location.href='index.html'">Cancel</button>
+    </div>
+
+    <script>
+      function processTransfer() {
+        alert("Wire Transfer Successful!");
+        window.location.href = "index.html";
+      }
+    </script>
+  </body>
+</html>
