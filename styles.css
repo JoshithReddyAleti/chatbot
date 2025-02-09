@@ -233,3 +233,272 @@ canvas {
 .banking-controls button:hover {
   background-color: #008f5f;
 }
+/* Login Page Centered */
+#login-container {
+  width: 30%;
+  background: #181818;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 255, 136, 0.5);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Modal Styling */
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 255, 136, 0.5);
+  border-radius: 10px;
+}
+
+.modal-content {
+  text-align: center;
+}
+
+.modal-content h2 {
+  color: #0047ab;
+}
+
+.modal-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.modal-content ul li {
+  font-size: 18px;
+  padding: 5px 0;
+}
+
+.modal-content button {
+  background-color: #00ff88;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Close Button */
+.close {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+/* Payment & Investment Containers */
+.payment-container,
+.investment-container {
+  width: 40%;
+  background: #181818;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 255, 136, 0.5);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Inputs */
+input,
+select {
+  width: 80%;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+/* Buttons */
+button {
+  background: #00ff88;
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+/* Transfer & Deposit Check Containers */
+.transfer-container,
+.deposit-container,
+.offers-container {
+  width: 40%;
+  background: #181818;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 255, 136, 0.5);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Form Inputs */
+input,
+select {
+  width: 80%;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+/* Buttons */
+button {
+  background: #00ff88;
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Offers Section */
+.offers-container ul {
+  list-style: none;
+  padding: 0;
+  font-size: 18px;
+}
+
+.offers-container ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #444;
+}
+/* Apply background to the entire page */
+body {
+  background-image: url("6980b328-1825-4852-b436-73cc65b67297.png"); /* Replace with correct file path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Arial", sans-serif;
+}
+
+/* Style the login container */
+#login-container {
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent black box */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 255, 136, 0.5);
+  text-align: center;
+  width: 350px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+/* Style the input fields */
+#login-container input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 16px;
+}
+
+/* Style the login button */
+#login-container button {
+  width: 100%;
+  padding: 12px;
+  background: #00ff88;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+}
+
+#login-container button:hover {
+  background: #00cc66;
+}
+
+/* Error message styling */
+#login-error {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Add a futuristic glow effect */
+#login-container input:focus,
+#login-container button:focus {
+  outline: none;
+  box-shadow: 0px 0px 10px rgba(0, 255, 136, 0.8);
+}
+/* Sign-Up Container */
+#signup-container {
+  width: 40%;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 255, 136, 0.5);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Sign-Up Input Fields */
+#signup-container input,
+#signup-container select {
+  width: 80%;
+  padding: 12px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 16px;
+}
+
+/* Buttons */
+#signup-container button {
+  width: 80%;
+  padding: 12px;
+  background: #00ff88;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#signup-container button:hover {
+  background: #00cc66;
+}
+
+/* Error and Success Messages */
+#signup-error {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+#signup-success {
+  color: limegreen;
+  font-size: 14px;
+  margin-top: 10px;
+}
