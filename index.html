@@ -11,16 +11,26 @@
   <body>
     <!-- Login Page -->
     <div id="login-container">
-      <h2>Login to Your Finance Dashboard</h2>
-      <input type="text" id="username" placeholder="Enter Username" required />
-      <input
-        type="password"
-        id="password"
-        placeholder="Enter Password"
-        required
-      />
+      <img src="user-icon.png" alt="User Icon" class="user-icon" />
+      <!-- Profile Icon -->
+      <h2>Login to Your Bank</h2>
+
+      <input type="text" id="username" placeholder="Username" required />
+      <input type="password" id="password" placeholder="Password" required />
+
+      <div class="remember-me">
+        <input type="checkbox" id="remember" />
+        <label for="remember">Remember me</label>
+        <a href="#" class="forgot-password">Forgot Password?</a>
+      </div>
+
       <button onclick="login()">Login</button>
-      <p id="login-error" style="color: red; display: none">
+
+      <p class="signup-text">
+        Don't have an account? <a href="signup.html">Sign up</a>
+      </p>
+
+      <p id="login-error" style="display: none">
         Invalid login. Please try again.
       </p>
     </div>
@@ -33,11 +43,15 @@
 
       <!-- Banking Actions -->
       <div class="banking-controls">
-        <button onclick="pay()">💳 Pay</button>
-        <button onclick="transfer()">🔄 Transfer</button>
-        <button onclick="deposit()">🏦 Deposit Check</button>
-        <button onclick="invest()">📈 Invest</button>
-        <button onclick="offers()">🎁 Offers</button>
+        <button onclick="window.location.href='payment.html'">💳 Pay</button>
+        <button onclick="window.location.href='transfer.html'">
+          🔄 Transfer
+        </button>
+        <button onclick="window.location.href='deposit.html'">
+          🏦 Deposit Check
+        </button>
+        <button onclick="window.location.href='invest.html'">📈 Invest</button>
+        <button onclick="window.location.href='offers.html'">🎁 Offers</button>
       </div>
 
       <div class="dashboard-container">
@@ -56,11 +70,11 @@
 
         <!-- Center: Chatbot -->
         <div id="chatbot" class="box">
-          <div id="chat-header">Virtual Assistant</div>
+          <div id="chat-header">Personalized FinanceAssistant</div>
           <div id="chat-body">
             <p>
-              <strong>Bot:</strong> Hi there! How can I assist you with your
-              finances today?
+              <strong>FinanceAssistant:</strong> Hi there! How can I assist you
+              with your finances today?
             </p>
           </div>
           <input
@@ -86,7 +100,6 @@
           </div>
         </div>
       </div>
-
       <!-- Bot Response Area -->
       <div id="bot-response" class="box" style="display: none"></div>
 
@@ -109,23 +122,6 @@
       <!-- Savings Plan -->
       <div id="savings-plan" class="box" style="display: none"></div>
     </div>
-
-    <script>
-      function pay() {
-        alert("Redirecting to Payment Options...");
-      }
-      function transfer() {
-        alert("Transfer Funds: Enter recipient details...");
-      }
-      function deposit() {
-        alert("Deposit Check: Upload or scan check...");
-      }
-      function invest() {
-        alert("Investment Options: View stock recommendations...");
-      }
-      function offers() {
-        alert("Exclusive Offers: Cashback & rewards available...");
-      }
-    </script>
   </body>
 </html>
+
