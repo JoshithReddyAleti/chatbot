@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,37 +5,127 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personalized Financial Dashboard</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js" defer></script>
   </head>
   <body>
-    <header>
-      <h1>Welcome to Your Personalized Financial Dashboard</h1>
-    </header>
-    <div class="dashboard">
-      <h2>Your Spending Overview</h2>
-      <div class="chart-container">
-        <div class="chart" id="pieChart">Pie Chart Placeholder</div>
-        <div class="chart" id="barChart">Bar Chart Placeholder</div>
-      </div>
-
-      <h2>Your Savings Goals</h2>
-      <div class="goal-tracker">
-        <p><strong>Vacation Fund:</strong> 60% Complete</p>
-        <div class="goal-progress" style="width: 60%"></div>
-        <p><strong>Emergency Savings:</strong> 40% Complete</p>
-        <div class="goal-progress" style="width: 40%"></div>
-      </div>
+    <!-- Login Page -->
+    <div id="login-container">
+      <h2>Login to Your Finance Dashboard</h2>
+      <input type="text" id="username" placeholder="Enter Username" required />
+      <input
+        type="password"
+        id="password"
+        placeholder="Enter Password"
+        required
+      />
+      <button onclick="login()">Login</button>
+      <p id="login-error" style="color: red; display: none">
+        Invalid login. Please try again.
+      </p>
     </div>
 
-    <div id="chatbot">
-      <div id="chat-header">Virtual Assistant</div>
-      <div id="chat-body">
-        <p><strong>Bot:</strong> Hi there! How can I help you today?</p>
+    <!-- Dashboard (Hidden initially) -->
+    <div id="dashboard" style="display: none">
+      <header>
+        <h1 id="welcome-message">Hi, User!</h1>
+      </header>
+
+      <!-- Banking Actions -->
+      <div class="banking-controls">
+        <button onclick="pay()">💳 Pay</button>
+        <button onclick="transfer()">🔄 Transfer</button>
+        <button onclick="deposit()">🏦 Deposit Check</button>
+        <button onclick="invest()">📈 Invest</button>
+        <button onclick="offers()">🎁 Offers</button>
       </div>
-      <input type="text" id="chat-input" placeholder="Type your message..." />
+
+      <div class="dashboard-container">
+        <!-- Left: Recent Transactions -->
+        <div class="transactions box">
+          <h2>Recent Transactions</h2>
+          <ul id="transaction-list">
+            <li>Amazon Purchase - $50</li>
+            <li>Electric Bill - $80</li>
+            <li>Restaurant - $45</li>
+            <li>Loan EMI - $200</li>
+            <li>Salary Credited - $5000</li>
+            <li>Gym Membership - $30</li>
+          </ul>
+        </div>
+
+        <!-- Center: Chatbot -->
+        <div id="chatbot" class="box">
+          <div id="chat-header">Virtual Assistant</div>
+          <div id="chat-body">
+            <p>
+              <strong>Bot:</strong> Hi there! How can I assist you with your
+              finances today?
+            </p>
+          </div>
+          <input
+            type="text"
+            id="chat-input"
+            placeholder="Type your message..."
+            onkeypress="handleChat(event)"
+          />
+        </div>
+
+        <!-- Right: Account Balances -->
+        <div class="account-balance box">
+          <h2>Account Balance</h2>
+          <div class="balance-container">
+            <div class="balance-card">
+              <h3>Checking</h3>
+              <p>$<span id="checking-balance"></span></p>
+            </div>
+            <div class="balance-card">
+              <h3>Savings</h3>
+              <p>$<span id="savings-balance">5000.00</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bot Response Area -->
+      <div id="bot-response" class="box" style="display: none"></div>
+
+      <!-- Financial Charts -->
+      <div
+        class="chart-container box"
+        id="charts-container"
+        style="display: none"
+      >
+        <h2>Income vs Expenditure</h2>
+        <canvas id="incomeExpenditureChart"></canvas>
+
+        <h2>Spending per Category</h2>
+        <canvas id="categoryChart"></canvas>
+      </div>
+
+      <!-- Financial Summary -->
+      <div id="financial-summary" class="box" style="display: none"></div>
+
+      <!-- Savings Plan -->
+      <div id="savings-plan" class="box" style="display: none"></div>
     </div>
 
-    <button onclick="toggleChatbot()" class="chat-button">Chat with Us</button>
-
-    <script src="script.js"></script>
+    <script>
+      function pay() {
+        alert("Redirecting to Payment Options...");
+      }
+      function transfer() {
+        alert("Transfer Funds: Enter recipient details...");
+      }
+      function deposit() {
+        alert("Deposit Check: Upload or scan check...");
+      }
+      function invest() {
+        alert("Investment Options: View stock recommendations...");
+      }
+      function offers() {
+        alert("Exclusive Offers: Cashback & rewards available...");
+      }
+    </script>
   </body>
 </html>
