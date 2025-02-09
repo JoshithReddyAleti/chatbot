@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
     function updateAccountBalance() {
-        document.getElementById("checking-balance").innerText = `$${checkingBalance.toFixed(2)}`;
+        document.getElementById("checking-balance").innerText = `${checkingBalance.toFixed(2)}`;
     };
     const financialData = {
         income: totalCredits,
