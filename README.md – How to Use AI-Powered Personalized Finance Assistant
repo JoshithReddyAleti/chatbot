@@ -1,0 +1,74 @@
+# 🚀 AI-Powered Personalized Finance Assistant – User Guide  
+
+## 📌 How to Access the Dashboard  
+To use the Personalized Finance Assistant, follow these steps:  
+
+1️⃣ Open the **index.html** file in a web browser.  
+2️⃣ On the login page, enter the following credentials:  
+   - **Username:** `admin`  
+   - **Password:** `admin123`  
+3️⃣ Click **Login** to access the financial dashboard.  
+
+---
+
+## 📊 How to Use Finance Assistant Features  
+
+### ✅ **1. Get a Pie Chart of Income & Spending**  
+- In the chatbot, type: **"income and spending"**  
+- The bot will generate a **pie chart** showing your income and spending distribution.  
+
+### ✅ **2. View a Bar Graph of Spending per Category**  
+- Type: **"categorized spending"**  
+- The bot will generate a **bar graph** that shows spending in different categories like Rent, Shopping, Utilities, etc.  
+
+### ✅ **3. Get a Spending Summary (Total Income, Expenditure, Remaining Balance, and Next Month’s Prediction)**  
+- Type: **"spending summary"**  
+- The bot will provide a **detailed financial summary**, including:
+  - **Total Income**
+  - **Total Expenditure**
+  - **Remaining Funds**
+  - **Predicted Expenditure for Next Month**  
+
+### ✅ **4. View a Savings Plan Recommendation**  
+- Type: **"savings plan"**  
+- The bot will analyze your spending habits and **suggest how much you should save** based on your income.  
+
+### ✅ **5. Get Alerts for Upcoming Bill Payments**  
+- Type: **"upcoming bills"**  
+- The bot will show **reminders** for **due payments** (like rent, electricity, loan EMI) so you never miss them.  
+
+### ✅ **6. Add New Bills to Be Paid**  
+- Type: **"add bill"**  
+- The bot will ask for **bill details** (e.g., Rent, Credit Card Payment) and due date.  
+- It will then remind you **3 days before the due date**.  
+
+---
+
+## 💳 **How to Perform Banking Actions**
+Use the following buttons at the top of the dashboard for banking operations:  
+
+- **💳 Pay** → Redirects to a **payment page** where you can enter transaction details.  
+- **🔄 Transfer** → Opens a **wire transfer page** where you enter recipient details and reason for transfer.  
+- **🏦 Deposit Check** → Lets you **upload a check image** and enter check details.  
+- **📈 Invest** → Displays **top stocks like NVIDIA, S&P 500, Tesla** to choose from and invest in.  
+- **🎁 Offers** → Shows **exclusive discounts** on groceries, gas, clothing, and electronics.  
+
+---
+
+## 🔄 **How to Reset the Dashboard**  
+If you want to **restart the session**:
+1. Refresh the page (`Ctrl + R` or `Cmd + R`).
+2. Log in again using `admin / admin123`.
+
+---
+
+## 🚀 **What’s Next?**  
+We plan to add:  
+✔️ **Credit Card & Auto Loan Recommendations**  
+✔️ **Multi-Bank Account Integration**  
+✔️ **AI-Powered Expense Forecasting**  
+✔️ **Mobile App Version for Banking on the Go**  
+
+💡 **Questions or Issues?** Feel free to report them in GitHub Issues!  
+
+🚀 **Let’s make financial management smarter and more personalized!**  
