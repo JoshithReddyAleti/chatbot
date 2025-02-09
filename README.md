@@ -28,10 +28,6 @@ This project was built using the following technologies and frameworks:
 **Problem:** Ensuring that **transactions, bill payments, and income updates** were properly stored and retrieved dynamically.  
 **Solution:** We implemented **local storage** to **persist financial data** across sessions and built an intuitive **dashboard that updates dynamically** whenever a user makes a transaction.  
 
-### **2️⃣ Loan Prediction Model**  
-**Problem:** Designing an **accurate loan pre-approval system** based on **credit score trends** while maintaining real-world applicability.  
-**Solution:** We developed a **step-by-step credit score-based loan approval formula**, leveraging **historical credit data** to determine **pre-approved loan amounts and interest rates** dynamically.  
-
 ### **3️⃣ Intelligent Chatbot for Finance Queries**  
 **Problem:** Making the **chatbot understand multiple financial queries** and deliver **structured responses** was a challenge.  
 **Solution:** We **enhanced natural language processing (NLP) logic** to recognize **financial terms** like "spending summary," "loan eligibility," and "investment recommendations," ensuring that the chatbot responds **intelligently to user queries**.  
@@ -57,7 +53,7 @@ This project utilizes **public frameworks and technologies** that helped in the 
 ---
 
 ## 🚀 What's Next for Personalized Finance Assistant?  
-We plan to enhance the **Personalized Finance Assistant** with the following features in future iterations:  
+I am planning to enhance the **Personalized Finance Assistant** with the following features in future iterations:  
 
 ✅ **AI-Powered Credit Card & Auto Loan Recommendations** – Predicting eligibility for **credit cards, auto loans, and personal loans** based on spending habits and credit score trends.  
 ✅ **Expense Forecasting with Machine Learning** – Implementing **AI models to predict future expenses** and **suggest better financial habits**.  
